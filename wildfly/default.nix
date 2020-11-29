@@ -9,16 +9,19 @@ pkgs.stdenv.mkDerivation rec {
   };
   buildPhase = "";
   installPhase = ''
+    echo $src
+    echo $out
     cp -R $src $out
+    mkdir $out/standalone/data
   '';
   meta = {
     homepage = http://wildfly.org/;
     description = "WildFly is a flexible, lightweight, managed application runtime that helps you build amazing applications.";
     license = "LGPL";
     maintainers = [{
-      email = "jakob-nixos@truh.in";
-      github = "truh";
-      name = "Jakob Klepp";
+      email = "andrea.camurri@realkam.net";
+      github = "Therealkam";
+      name = "Andrea Camurri";
     }];
   };
 }
