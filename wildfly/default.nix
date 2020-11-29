@@ -12,7 +12,6 @@ pkgs.stdenv.mkDerivation rec {
     echo $src
     echo $out
     cp -R $src $out
-    mkdir $out/standalone/data
   '';
   meta = {
     homepage = http://wildfly.org/;
