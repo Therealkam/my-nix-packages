@@ -6,6 +6,7 @@
   wildfly = pkgs.callPackage ./wildfly/default.nix {};
   postman_appimage = pkgs.callPackage ./postman-appimage/default.nix {};
   remmina = pkgs.callPackage ./remmina/default.nix {};
+  eclipse = pkgs.callPackage ./eclipse/default.nix {};
 
   services = import ./services/default.nix;
 }
