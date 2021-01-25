@@ -68,7 +68,7 @@ in rec {
   ### Eclipse Scala SDK
 
   eclipse-scala-sdk =
-    buildEclipse.override { jdk = jdk8; gtk = gtk2; } {
+    buildEclipse.override { jdk = jdk11; gtk = gtk2; } {
       name = "eclipse-scala-sdk-4.7.0";
       description = "Eclipse IDE for Scala Developers";
       src =
