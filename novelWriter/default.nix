@@ -13,7 +13,7 @@ let
   # Inject dependencies into the build function
   f = { buildPythonPackage, pyqt5, lxml, pyenchant }:
     buildPythonPackage rec {
-      pname = "novelwriter";
+      pname = "novelWriter";
       version = "1.4.1";
 
       # If you have your sources locally, you can specify a path
