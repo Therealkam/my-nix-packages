@@ -20,7 +20,7 @@ let
       #src = /home/stigok/src/ruterstop
 
       # Pull source from a Git server. Optionally select a specific `ref` (e.g. branch),
-      # or `rev` revision hash.
+      # or `rev` revision hash. 
       src = builtins.fetchGit {
         url = "git@github.com:vkbo/novelWriter.git";
         ref = "main";
