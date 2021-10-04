@@ -8,6 +8,7 @@
   remmina = pkgs.callPackage ./remmina/default.nix {};
   eclipse = pkgs.callPackage ./eclipse/default.nix {};
   novelWriter = pkgs.callPackage ./novelWriter/default.nix {};
+  taskline = pkgs.callPackage ./taskline/default.nix {};
 
   services = import ./services/default.nix;
 }
